@@ -17,6 +17,14 @@ Written in C# using the [Avalonia] Framework.
 
 
 
+## Linux Users Should Make Their AppImage files executable!
+```bash
+    cd /path to your installation folder
+    chmod +x Movie_Chooser-Linux_x86_64.AppImage
+```
+### OR
+    
+
 
 
 
