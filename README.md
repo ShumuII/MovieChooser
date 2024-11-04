@@ -3,7 +3,7 @@
 Written in C# using the [Avalonia] Framework.
 
 ## Features
-- Movie selection from given inputs
+- Choosing a film from the written ones
 - Access to informations about the movie from ImDb
 - Button to go to the movie's IMDB site
 
