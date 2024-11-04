@@ -1,0 +1,118 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="" d:DesignHeight=""
+        Width="450"
+        Height="470"
+        x:Class="MovieChooser.MainWindow"
+        Title="shumull's Movie Chooser 1.1"
+        CanResize="False"
+        Icon="/Resources/icon.png"
+        >
+        
+        <Grid RowDefinitions="Auto,*,Auto">
+                <!--TitleBar-->
+                <Grid Grid.Row="0" Background="#2f2f2f" Height="40" ColumnDefinitions="Auto, Auto, * , Auto,Auto">
+                        <Rectangle Grid.Column="0" Width="40"></Rectangle>
+                        <Rectangle Grid.Column="1" Width="40"></Rectangle>
+                        <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                                <StackPanel.Styles>
+                                        <Style Selector="Label">
+                                                <Setter Property="Foreground" Value="LightGray"></Setter>
+                                        </Style>
+                                </StackPanel.Styles>
+                                <Label FontWeight="Black">shumulls</Label>
+                                <Label>Movie Chooser 1.1</Label>
+                        </StackPanel>
+                        <Rectangle Grid.Column="3" Width="40"></Rectangle>
+                        <Rectangle Grid.Column="4" Width="40"></Rectangle>
+                </Grid>
+                <!-- Selector and Portait show-->
+                <Grid Grid.Row="1" ColumnDefinitions="*,*">
+                        <!-- Movie keeper-->
+                        <Grid Grid.Column="0" Background="#595959" RowDefinitions="Auto,*,*">
+                                <StackPanel  Grid.Row="0" Margin="4">
+                                        <StackPanel.Styles>
+                                                <Style Selector="Button">
+                                                        <Setter Property="Background" Value="#191813"></Setter>
+                                                        <Setter Property="Foreground" Value="#ddeff1"></Setter>
+                                                        <Setter Property="FontWeight" Value="Thin"></Setter>
+                                                        <Setter Property="FontSize" Value="10"></Setter>
+                                                </Style>
+                                                <Style Selector="TextBox">
+                                                        <Setter Property="Background" Value="#191813"></Setter>
+                                                        <Setter Property="FontSize" Value="13"></Setter>
+                                                        <Setter Property="FontStyle" Value="Normal"></Setter>
+                                                        <Setter Property="Foreground" Value="White"></Setter>
+                                                        <Setter Property="CornerRadius" Value="7"></Setter>
+                                                        <Setter Property="FontFamily" Value="URW Gothic"></Setter>
+                                                        <Setter Property="Padding" Value="5,9,1,1"></Setter>
+                                                </Style>
+                                        </StackPanel.Styles>
+                                        <TextBox x:Name="MovieTextBox" FontWeight="UltraLight">Enter your movies</TextBox>
+                                        <StackPanel Orientation="Horizontal" Margin="0,3,0,0">
+                                                <Label Margin="0,0,115,0"></Label>
+                                                <Button x:Name="AddButton" Margin="0,0,4,0">Add</Button>
+                                                <Button x:Name="ChooseButton" Background="Transparent" Foreground="White" BorderBrush="#191813">Choose!</Button>
+                                        </StackPanel>
+                                </StackPanel>
+                                        <StackPanel Margin="0,10,0,0" Grid.Row="1" Name="ListPanel">
+                                                <StackPanel.Styles>
+                                                        <Style Selector="Label">
+                                                                <Setter Property="Background" Value="#131313"></Setter>
+                                                                <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                                                                <Setter Property="CornerRadius" Value="4"></Setter>
+                                                                <Setter Property="Foreground" Value="White"></Setter>
+                                                                <Setter Property="VerticalAlignment" Value="Top"></Setter>
+                                                                <Setter Property="Margin" Value="0,0.5,0,0.5"></Setter>
+                                                                <Setter Property="FontWeight" Value="Thin"></Setter>
+                                                        </Style>
+                                                </StackPanel.Styles>
+                                        </StackPanel >
+                                <StackPanel Grid.Row="2">
+                                        <StackPanel.Styles>
+                                                <Style Selector="Label">
+                                                        <Setter Property="FontSize" Value="20"></Setter>
+                                                        <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                                                        <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                                                        <Setter Property="Margin" Value="10"></Setter>
+                                                        <Setter Property="Foreground" Value="White"></Setter>
+                                                        <Setter Property="Background" Value="Transparent"></Setter>
+                                                        <Setter Property="FontFamily" Value="Cantarell"></Setter>
+                                                        <Setter Property="FontWeight" Value="Bold"></Setter>
+                                                        <Setter Property="CornerRadius" Value="15"></Setter>
+                                                        <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                                                        <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+                                                </Style>
+                                        </StackPanel.Styles>
+                                        <Label x:Name="Title" Background="Gray" MinWidth="200" MinHeight="50" IsVisible="False"></Label>
+                                </StackPanel>
+                                
+                                
+                                
+                        </Grid>
+                        <!-- Portrait show-->
+                        <StackPanel Grid.Column="1" Background="#595959">
+                                <Label BorderBrush="White" Margin="0,25,0,0" BorderThickness="3" Width="170" Height="250" CornerRadius="4">
+                                        <!--Portait Space-->
+                                        <Image Stretch="UniformToFill" Name="PosterAv"></Image>
+                                </Label>
+                                <Label Name="MovieTitle" HorizontalAlignment="Center" Margin="30,5,30,0" FontWeight="Bold" Background="Transparent" Foreground="White">Movie Name</Label>
+                                <Label Name="Director" HorizontalAlignment="Center" Margin="30,0,30,0" FontWeight="Bold" Background="Transparent" Foreground="White">Director</Label>
+                                <Label Name="ReleaseDate" HorizontalAlignment="Center" Margin="30,0,30,0" FontWeight="Bold" Background="Transparent" Foreground="White">Release Year:  </Label>
+                                <StackPanel Orientation="Horizontal">
+                                        <Label Name="RatingText" HorizontalAlignment="Center" Margin="90,0,0,0" FontWeight="Bold" Background="Transparent" Foreground="White">Rating: </Label>
+                                        <Label Name="Rating" HorizontalAlignment="Center" Margin="0,0,30,0" FontWeight="Bold" Background="Transparent" Foreground="White"></Label>
+                                </StackPanel>
+                        </StackPanel>
+                </Grid>
+                <!-- Links(To Imdb site and resources-->
+                <Grid Grid.Row="2" Background="#2f2f2f" ColumnDefinitions="*,Auto,*">
+                        <Button Grid.Column="0" Name="ImDbButton" Margin="0,0,0,0"><Image Width="40" Source="Resources/Danleech-Simple-Imdb.512.png"></Image></Button>
+                        <Button Grid.Column="1" Name="Metascore" Width="90" HorizontalAlignment="Right" Margin="110,5,-5,5" Foreground="LightGray" Content="Metascore"></Button>
+                        <Button Grid.Column="2" Name="YandexButton" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="5" Foreground="LightGray">Search in web</Button>
+                </Grid>
+                
+        </Grid>
+</Window>
