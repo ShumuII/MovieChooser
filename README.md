@@ -23,7 +23,9 @@ Written in C# using the [Avalonia] Framework.
     chmod +x Movie_Chooser-Linux_x86_64.AppImage
 ```
 ### OR
-    
+- Right click on Movie_Chooser-Linux_x86_64.AppImage
+- Click Properties
+- Activate the "Allow executing file as program" checkbox at Permissions tab.
 
 
 
