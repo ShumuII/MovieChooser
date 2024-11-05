@@ -19,12 +19,12 @@ Written in C# using the [Avalonia] Framework and [OMDb] API.
 
 
 
-## Linux Users Should Make Their AppImage files executable!
+## Linux Users Should Make Their AppImage Files Executable!
 ```bash
     cd /path to your installation folder
     chmod +x Movie_Chooser-Linux_x86_64.AppImage
 ```
-### OR
+### Or
 - Right click on Movie_Chooser-Linux_x86_64.AppImage
 - Click Properties
 - Activate the "Allow executing file as program" checkbox at Permissions tab.
