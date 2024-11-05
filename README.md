@@ -38,4 +38,4 @@ Written in C# using the [Avalonia] Framework and [OMDb] API.
 
 
 [Avalonia]: <https://github.com/AvaloniaUI/Avalonia>
-[OMDb API]: <https://www.omdbapi.com/>
+[OMDb]: <https://www.omdbapi.com/>
