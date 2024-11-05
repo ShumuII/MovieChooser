@@ -1,6 +1,6 @@
 # Movie Chooser
 
-Written in C# using the [Avalonia] Framework.
+Written in C# using the [Avalonia] Framework and [OMDb API].
 
 ## Features
 - Choosing a film from the written ones
@@ -38,3 +38,4 @@ Written in C# using the [Avalonia] Framework.
 
 
 [Avalonia]: <https://github.com/AvaloniaUI/Avalonia>
+[OMDb API]: <https://www.omdbapi.com/>
