@@ -1,4 +1,4 @@
-# Movie Chooser 1.1
+# Movie Chooser
 
 Written in C# using the [Avalonia] Framework.
 
