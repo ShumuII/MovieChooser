@@ -7,7 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2173cf7f-2adb-47dd-a33e-2188f87e7f37" name="Changes" comment="" />
+    <list default="true" id="2173cf7f-2adb-47dd-a33e-2188f87e7f37" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AvaloniaApplication1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AvaloniaApplication1/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,12 +28,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ShumuII"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ShumuII&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/ShumuII/MovieChooser.git&quot;,
@@ -60,25 +62,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.AvaloniaApplication1.executor&quot;: &quot;Debug&quot;,
-    &quot;Publish to folder.Deploy To Folder.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/shumull/İndirilenler/Karar_Carki-master/KararCarki.sln&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.AvaloniaApplication1.executor": "Debug",
+    "Publish to folder.Deploy To Folder.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/shumull/RiderProjects/Releases/MovieChooser/OSX",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.updates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected=".NET Project.AvaloniaApplication1">
+}]]></component>
+  <component name="RunManager" selected="Publish to folder.Deploy To Folder">
     <configuration name="Deploy To Folder" type="DotNetFolderPublish" factoryName="Publish to folder">
-      <riderPublish configuration="Release" include_all_content_for_self_extract="true" include_native_libs_for_self_extract="true" platform="Any CPU" produce_single_file="true" runtime="linux-x64" target_folder="$PROJECT_DIR$/AvaloniaApplication1/bin/Release/net8.0/linux-x64/publish" target_framework="net8.0" uuid_high="1044590089663958201" uuid_low="-6018554276701563591" />
+      <riderPublish configuration="Release" include_all_content_for_self_extract="true" include_native_libs_for_self_extract="true" platform="Any CPU" produce_single_file="true" runtime="osx-x64" self_contained="true" target_folder="$PROJECT_DIR$/../Releases/MovieChooser/OSX" target_framework="net8.0" uuid_high="1044590089663958201" uuid_low="-6018554276701563591" />
       <method v="2" />
     </configuration>
     <configuration name="AvaloniaApplication1" type="DotNetProject" factoryName=".NET Project">
@@ -121,7 +123,7 @@
       <workItem from="1730666855875" duration="1774000" />
       <workItem from="1730675077776" duration="10626000" />
       <workItem from="1730686153693" duration="189000" />
-      <workItem from="1730686900919" duration="1346000" />
+      <workItem from="1730686900919" duration="1962000" />
     </task>
     <servers />
   </component>

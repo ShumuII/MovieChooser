@@ -4,6 +4,7 @@
     <option name="projectPerEditor">
       <map>
         <entry key="AvaloniaApplication1/MainWindow.axaml" value="AvaloniaApplication1/AvaloniaApplication1.csproj" />
+        <entry key="MovieChooser/MainWindow.axaml" value="MovieChooser/MovieChooser.csproj" />
       </map>
     </option>
   </component>

@@ -33,10 +33,7 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-
-        //Controls for focus situations
-        MovieTextBox.GotFocus += MovieTextGotFocus;
-        MovieTextBox.LostFocus += MovieTextLostFocus;
+        
         
         var moviesTextBox = this.FindControl<TextBox>("MovieTextBox");
         var addButton = this.FindControl<Button>("AddButton");
@@ -202,27 +199,6 @@ public partial class MainWindow : Window
         }
     }
     
-    
-    //Deletes the "Enter your movies" text while textbox focused
-    private void MovieTextGotFocus(object sender, RoutedEventArgs e)
-    {
-        if (MovieTextBox.Text == "Enter your movies")
-        {
-            MovieTextBox.Text = "";
-        }
-    }
-
-    
-    //Writes down "Enter your movies" while textbox is empty and unfocused
-    private void MovieTextLostFocus(object sender, RoutedEventArgs e)
-    {
-        if (string.IsNullOrWhiteSpace(MovieTextBox.Text))
-        {
-            MovieTextBox.Text = "Enter your movies";
-        }
-    }
-
-
     public class apiOp
     {
         public static string urlMaker(string chosen) {

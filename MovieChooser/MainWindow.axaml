@@ -50,7 +50,7 @@
                                                         <Setter Property="Padding" Value="5,9,1,1"></Setter>
                                                 </Style>
                                         </StackPanel.Styles>
-                                        <TextBox x:Name="MovieTextBox" FontWeight="UltraLight">Enter your movies</TextBox>
+                                        <TextBox x:Name="MovieTextBox" FontWeight="UltraLight" Watermark="Enter your movies:" UseFloatingWatermark="True"></TextBox>
                                         <StackPanel Orientation="Horizontal" Margin="0,3,0,0">
                                                 <Label Margin="0,0,115,0"></Label>
                                                 <Button x:Name="AddButton" Margin="0,0,4,0">Add</Button>
@@ -64,8 +64,8 @@
                                                                 <Setter Property="HorizontalAlignment" Value="Center"></Setter>
                                                                 <Setter Property="CornerRadius" Value="4"></Setter>
                                                                 <Setter Property="Foreground" Value="White"></Setter>
-                                                                <Setter Property="VerticalAlignment" Value="Top"></Setter>
-                                                                <Setter Property="Margin" Value="0,0.5,0,0.5"></Setter>
+                                                                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                                                                <Setter Property="Margin" Value="0,1,0,0.5"></Setter>
                                                                 <Setter Property="FontWeight" Value="Thin"></Setter>
                                                         </Style>
                                                 </StackPanel.Styles>
@@ -107,7 +107,7 @@
                                 </StackPanel>
                         </StackPanel>
                 </Grid>
-                <!-- Links(To Imdb site and resources-->
+                <!-- Links(To Imdb site and resources)-->
                 <Grid Grid.Row="2" Background="#2f2f2f" ColumnDefinitions="*,Auto,*">
                         <Button Grid.Column="0" Name="ImDbButton" Margin="0,0,0,0"><Image Width="40" Source="Resources/Danleech-Simple-Imdb.512.png"></Image></Button>
                         <Button Grid.Column="1" Name="Metascore" Width="90" HorizontalAlignment="Right" Margin="110,5,-5,5" Foreground="LightGray" Content="Metascore"></Button>
