@@ -52,7 +52,7 @@
                                         </StackPanel.Styles>
                                         <TextBox x:Name="MovieTextBox" FontWeight="UltraLight" Watermark="Enter your movies:" UseFloatingWatermark="True"></TextBox>
                                         <StackPanel Orientation="Horizontal" Margin="0,3,0,0">
-                                                <Label Margin="0,0,115,0"></Label>
+                                                <Label Margin="0,0,112,0"></Label>
                                                 <Button x:Name="AddButton" Margin="0,0,4,0">Add</Button>
                                                 <Button x:Name="ChooseButton" Background="Transparent" Foreground="White" BorderBrush="#191813">Choose!</Button>
                                         </StackPanel>

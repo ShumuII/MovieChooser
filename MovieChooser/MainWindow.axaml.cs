@@ -95,7 +95,7 @@ public partial class MainWindow : Window
     public void YandexButton_Click(object sender, RoutedEventArgs e)
     {
         
-        string searchUrl = "https://yandex.com.tr/search/?text=" + _url + "+izle";
+        string searchUrl = "https://yandex.com/search/?text=" + _url;
         var psi = new ProcessStartInfo
         {
             FileName = searchUrl,
@@ -187,13 +187,11 @@ public partial class MainWindow : Window
     {
         using (HttpClient client = new HttpClient())
         {
-            // URL'den veriyi indiriyoruz
+            //Downloading the data from URL
             var imageData = await client.GetByteArrayAsync(url);
-
-            // Byte array'den bir MemoryStream oluşturuyoruz
+            
             using (var stream = new MemoryStream(imageData))
             {
-                // Bitmap nesnesini stream'den oluşturuyoruz
                 return new Bitmap(stream);
             }
         }
